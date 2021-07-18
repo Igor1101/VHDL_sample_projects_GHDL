@@ -15,6 +15,6 @@ test: $(MODULES)
 
 clean:
 	echo "Cleaning up..."
-	rm -f *.o *_testbench $(TARGET) work*.cf e*.lst
+	rm -f *.o *_testbench $(TARGET) work*.cf e*.lst *.vcd
 view:
 	gtkwave $(TARGET).vcd
