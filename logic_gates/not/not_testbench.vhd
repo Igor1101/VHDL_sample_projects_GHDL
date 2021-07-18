@@ -26,7 +26,7 @@ begin
         input <= "01"; wait for 10 ns; assert output = '0' report "0&1 failed";
         input <= "10"; wait for 10 ns; assert output = '1' report "1&0 failed";
         input <= "11"; wait for 10 ns; assert output = '0' report "1&1 failed";
-        report "Or testbench finished";
+        report "NOT testbench finished";
         wait;
     end process;
 end;
