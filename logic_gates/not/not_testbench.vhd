@@ -8,7 +8,6 @@ architecture behavior of not_testbench is
     component func_not is
         port (
             a  : in  std_logic;
-            b  : in  std_logic;
             s  : out std_logic);
     end component;
     signal input  : std_logic_vector(1 downto 0);
@@ -16,7 +15,6 @@ architecture behavior of not_testbench is
 begin
     uut: func_not port map (
         a => input(0),
-        b => input(1),
         s => output
     );
 

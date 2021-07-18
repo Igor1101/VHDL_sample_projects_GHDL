@@ -2,7 +2,8 @@ GHDL=ghdl
 GHDLFLAGS=
 MODULES=\
     full_adder.o \
-    full_adder_testbench.o\
-	full_adder_testbench
-TARGET = full_adder_testbench
+    half_adder.o \
+    adder_testbench.o\
+	adder_testbench
+TARGET = adder_testbench
 include ../build.mk
